@@ -1,5 +1,5 @@
 def gather_inputs():
-    operation = input("Please type in operation you would like to complete: +, -, *, /, or ^")
+    operation = input("Please type in operation you would like to complete: ^, +, -, *, or /")
     number_1 = int(input('Please enter the first number: '))
     number_2 = int(input('Please enter the second number: '))
     return operation, number_1, number_2
