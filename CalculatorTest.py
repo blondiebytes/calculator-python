@@ -24,5 +24,9 @@ class CalculatorTest(unittest.TestCase):
         with self.assertRaises(Exception):
             Calculator.run_operation(9,0, '8')
 
+    def test_run_operation_exponentiation(self):
+        self.assertEqual(16, Calculator.run_operation(2, 4, '^'))
+        self.assertEqual(1, Calculator.run_operation(5, 0, '^'))
+
 if __name__ == "__main__":
     unittest.main()
