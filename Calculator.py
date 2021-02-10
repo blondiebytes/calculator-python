@@ -17,6 +17,9 @@ def run_operation(number_1,  number_2, operation):
     elif operation == '/':
         print('{} / {} = '.format(number_1, number_2), end = '')
         return number_1 / number_2
+    elif operation == '^':
+        print('{} ^ {}= '.format(number_1, number_1), end= '' )
+        return number_1 ** number_2
     else:
         raise Exception('This operator is invalid. Try running the program again.')
 
