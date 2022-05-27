@@ -20,6 +20,11 @@ class CalculatorTest(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             Calculator.run_operation(9, 0, '/')
 
+        #code copied from above
+    def test_run_operation_multiple(self):
+        self.assertEqual(1, Calculator.run_operation(3, 3, '//'))
+        self.assertEqual(7, Calculator.run_operation(15, 2, '//'))
+
     def test_run_operation_invalid(self):
         with self.assertRaises(Exception):
             Calculator.run_operation(9,0, '8')
