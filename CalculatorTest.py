@@ -12,8 +12,8 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(-0.5, Calculator.run_operation(2, 2.5, '-'))
 
     def test_run_operation_multiple(self):
-        self.assertEqual(9, Calculator.run_operation(3, 3, '*'))
-        self.assertEqual(13.5, Calculator.run_operation(3, 4.5, '*'))
+        self.assertEqual(9, Calculator.run_operation(3, 3, 'x'))
+        self.assertEqual(13.5, Calculator.run_operation(3, 4.5, 'x'))
 
     def test_run_operation_divide(self):
         self.assertEqual(2, Calculator.run_operation(10, 5, '/'))
