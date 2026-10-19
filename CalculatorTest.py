@@ -20,6 +20,10 @@ class CalculatorTest(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             Calculator.run_operation(9, 0, '/')
 
+    def test_run_operation_average(self):
+        self.assertEqual(5, Calculator.run_operation(4, 6, 'avg'))
+        self.assertEqual(2.5, Calculator.run_operation(1.5, 3.5, 'avg'))
+
     def test_run_operation_invalid(self):
         with self.assertRaises(Exception):
             Calculator.run_operation(9,0, '8')
